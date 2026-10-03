@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChemLab — Nghiên cứu Hoá học</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#12243b;--text:#eaf3ff;--muted:#9db0c8;--accent:#35d0ba;--accent2:#58a6ff;--border:#203650}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(135deg,#06101d,#0b1728 55%,#08131f);color:var(--text)}
+header{position:sticky;top:0;z-index:5;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:22px;font-weight:800}.brand span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px}nav a:hover{color:var(--text)}
+.hero{max-width:1180px;margin:auto;padding:70px 22px 45px;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+.badge{display:inline-block;color:var(--accent);border:1px solid #23685f;background:#0b2827;padding:7px 11px;border-radius:999px;font-size:13px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:18px 0}.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:650px}
+.hero-card{background:linear-gradient(145deg,#10253b,#0a1728);border:1px solid var(--border);border-radius:24px;padding:28px;box-shadow:0 20px 70px #0005}.orb{height:230px;border-radius:20px;display:grid;place-items:center;background:radial-gradient(circle,#35d0ba55 0 4%,transparent 5% 18%,#58a6ff22 19% 30%,transparent 31%),linear-gradient(135deg,#0c2536,#091422)}
+.atom{font-size:88px;filter:drop-shadow(0 0 25px #35d0ba88)}
+section{max-width:1180px;margin:auto;padding:30px 22px 65px}h2{font-size:30px;margin-bottom:8px} .sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:22px}.card h3{margin-top:0}.icon{font-size:30px}.card p{color:var(--muted);line-height:1.6}
+.tool{display:grid;grid-template-columns:1fr 1fr;gap:20px}.box{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:22px}
+input,textarea,select{width:100%;padding:12px 13px;margin:7px 0 14px;background:#081523;color:var(--text);border:1px solid var(--border);border-radius:10px;font-size:15px}button{border:0;border-radius:10px;padding:12px 16px;background:var(--accent);color:#06201d;font-weight:800;cursor:pointer}button:hover{filter:brightness(1.08)}
+.result{margin-top:14px;padding:14px;border-radius:10px;background:#081923;color:#9ff3e7;min-height:22px}
+.search{display:flex;gap:10px;margin:20px 0}.search input{margin:0}.ptable{display:grid;grid-template-columns:repeat(9,1fr);gap:7px}.el{min-height:65px;border:1px solid var(--border);border-radius:9px;padding:7px;background:#0b1b2d;cursor:pointer}.el:hover{border-color:var(--accent)}.el b{font-size:17px}.el small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+footer{border-top:1px solid var(--border);padding:25px;text-align:center;color:var(--muted)}
+@media(max-width:800px){.hero,.tool{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.ptable{grid-template-columns:repeat(4,1fr)}nav a{margin-left:9px}.hero{padding-top:40px}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand">⚗ Chem<span>Lab</span></div><div><a href="#khampha">Khám phá</a><a href="#nguyen-to">Nguyên tố</a><a href="#cong-cu">Công cụ</a><a href="#ghichu">Ghi chú</a></div></nav></header>
+
+<main>
+<section class="hero">
+<div>
+<span class="badge">NỀN TẢNG NGHIÊN CỨU HOÁ HỌC</span>
+<h1>Khám phá thế giới<br><span style="color:var(--accent)">phân tử</span>.</h1>
+<p>Không gian học tập và nghiên cứu hoá học trực quan: tra cứu nguyên tố, tính số mol, lưu giả thuyết và xây dựng ý tưởng thí nghiệm.</p>
+<a href="#nguyen-to"><button>Khám phá bảng tuần hoàn →</button></a>
+</div>
+<div class="hero-card"><div class="orb"><div class="atom">⚛</div></div><p style="color:var(--muted);margin-bottom:0">“Hoá học là khoa học nghiên cứu vật chất, cấu trúc, tính chất và sự biến đổi của nó.”</p></div>
+</section>
+
+<section id="khampha">
+<h2>Khu vực nghiên cứu</h2><p class="sub">Các công cụ cơ bản được tích hợp ngay trên trang.</p>
+<div class="grid">
+<div class="card"><div class="icon">🔬</div><h3>Phòng thí nghiệm</h3><p>Ghi lại mục tiêu, giả thuyết, biến số và kết quả quan sát của một nghiên cứu.</p></div>
+<div class="card"><div class="icon">🧬</div><h3>Cấu trúc phân tử</h3><p>Khám phá mối liên hệ giữa công thức hoá học, khối lượng mol và thành phần nguyên tố.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Phân tích dữ liệu</h3><p>Tổ chức dữ liệu thí nghiệm và thực hiện những phép tính hoá học cơ bản.</p></div>
+</div></section>
+
+<section id="nguyen-to">
+<h2>Bảng nguyên tố nhanh</h2><p class="sub">Nhấn vào nguyên tố để xem thông tin cơ bản.</p>
+<div class="search"><input id="search" placeholder="Tìm theo tên hoặc ký hiệu..."></div>
+<div class="ptable" id="ptable"></div>
+<div class="result" id="elementInfo">Chọn một nguyên tố để xem thông tin.</div>
+</section>
+
+<section id="cong-cu">
+<h2>Công cụ tính số mol</h2><p class="sub">Công thức: n = m / M</p>
+<div class="tool">
+<div class="box"><label>Khối lượng m (g)</label><input id="mass" type="number" step="any" placeholder="Ví dụ: 18"><label>Khối lượng mol M (g/mol)</label><input id="molar" type="number" step="any" placeholder="Ví dụ: 18"><button onclick="calc()">Tính số mol</button><div class="result" id="calcResult">Kết quả sẽ xuất hiện ở đây.</div></div>
+<div class="box"><h3>💡 Gợi ý nghiên cứu</h3><p style="color:var(--muted);line-height:1.7">Khi thiết kế một thí nghiệm, hãy xác định rõ biến độc lập, biến phụ thuộc, biến kiểm soát và cách thu thập dữ liệu. Luôn tuân thủ quy định an toàn phòng thí nghiệm.</p></div>
+</div></section>
+
+<section id="ghichu">
+<h2>Sổ ghi chú nghiên cứu</h2><p class="sub">Nội dung được lưu ngay trong trình duyệt của bạn.</p>
+<div class="box"><input id="noteTitle" placeholder="Tên nghiên cứu"><textarea id="note" rows="7" placeholder="Mục tiêu, giả thuyết, phương pháp, quan sát..."></textarea><button onclick="saveNote()">Lưu ghi chú</button><div class="result" id="saveResult"></div></div>
+</section>
+</main>
+<footer>© 2026 ChemLab · Website nghiên cứu hoá học học tập</footer>
+
+<script>
+const elements=[
+["H","Hydrogen",1,1.008,"Phi kim"],["He","Helium",2,4.003,"Khí hiếm"],["Li","Lithium",3,6.94,"Kim loại kiềm"],["Be","Beryllium",4,9.012,"Kim loại kiềm thổ"],["B","Boron",5,10.81,"Á kim"],["C","Carbon",6,12.011,"Phi kim"],["N","Nitrogen",7,14.007,"Phi kim"],["O","Oxygen",8,15.999,"Phi kim"],["F","Fluorine",9,18.998,"Halogen"],["Ne","Neon",10,20.180,"Khí hiếm"],["Na","Sodium",11,22.990,"Kim loại kiềm"],["Mg","Magnesium",12,24.305,"Kim loại kiềm thổ"],["Al","Aluminium",13,26.982,"Kim loại"],["Si","Silicon",14,28.085,"Á kim"],["P","Phosphorus",15,30.974,"Phi kim"],["S","Sulfur",16,32.06,"Phi kim"],["Cl","Chlorine",17,35.45,"Halogen"],["Ar","Argon",18,39.948,"Khí hiếm"],["K","Potassium",19,39.098,"Kim loại kiềm"],["Ca","Calcium",20,40.078,"Kim loại kiềm thổ"],["Fe","Iron",26,55.845,"Kim loại chuyển tiếp"],["Cu","Copper",29,63.546,"Kim loại chuyển tiếp"],["Zn","Zinc",30,65.38,"Kim loại chuyển tiếp"],["Ag","Silver",47,107.868,"Kim loại chuyển tiếp"],["I","Iodine",53,126.904,"Halogen"],["Au","Gold",79,196.967,"Kim loại chuyển tiếp"],["Hg","Mercury",80,200.592,"Kim loại chuyển tiếp"],["Pb","Lead",82,207.2,"Kim loại"],["U","Uranium",92,238.029,"Actinide"]
+];
+const grid=document.getElementById("ptable"), info=document.getElementById("elementInfo");
+function render(filter=""){grid.innerHTML="";elements.filter(e=>(e[0]+" "+e[1]).toLowerCase().includes(filter.toLowerCase())).forEach(e=>{let d=document.createElement("div");d.className="el";d.innerHTML=`<b>${e[0]}</b><small>${e[1]}</small><small>${e[2]} · ${e[3]}</small>`;d.onclick=()=>info.innerHTML=`<b>${e[0]} — ${e[1]}</b> · Số hiệu nguyên tử: ${e[2]} · Khối lượng nguyên tử: ${e[3]} u · Nhóm: ${e[4]}`;grid.appendChild(d)})}
+document.getElementById("search").oninput=e=>render(e.target.value);render();
+function calc(){let m=Number(document.getElementById("mass").value),M=Number(document.getElementById("molar").value);document.getElementById("calcResult").textContent=(m>0&&M>0)?`n = ${m/M} mol`:"Vui lòng nhập m và M lớn hơn 0."}
+function saveNote(){let t=document.getElementById("noteTitle").value,n=document.getElementById("note").value;if(!t||!n)return document.getElementById("saveResult").textContent="Hãy nhập tiêu đề và nội dung.";localStorage.setItem("chemlab_note",JSON.stringify({t,n}));document.getElementById("saveResult").textContent="Đã lưu ghi chú trên thiết bị."}
+const old=localStorage.getItem("chemlab_note");if(old){let x=JSON.parse(old);noteTitle.value=x.t;note.value=x.n}
+</script>
+</body>
+</html>
